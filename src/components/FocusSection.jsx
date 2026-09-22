@@ -8,7 +8,7 @@ export default function FocusSection({ onSelectCard }) {
       title: 'Strategic Partnerships',
       subtitle: 'Connecting the right people and organizations.',
       image: '/assets/strategic_partnerships.png',
-      alt: 'Two business executives shaking hands across boardroom table',
+      alt: 'Iconic architectural cable-stayed bridge with red suspension cables connecting skyline districts at sunrise',
       details: 'We build high-trust alliances between ambitious companies, investors, and key institutional leaders. Through calculated network mapping and aligned incentives, we orchestrate partnerships that produce sustainable compound growth rather than short-lived transactions.',
       deliverables: [
         'Institutional & Corporate Deal Sourcing',
