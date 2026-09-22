@@ -28,8 +28,18 @@ export default function Footer({ onOpenContact, onReplaySplash }) {
   };
 
   return (
-    <footer className="bg-[#0B0C0E] text-white relative overflow-hidden border-t border-white/10">
+    <footer className="bg-[#0B0C0E] text-white relative overflow-hidden border border-white/10 mx-2 sm:mx-4 lg:mx-6 mb-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] shadow-2xl">
       
+      {/* 3D Background Image Asset with Heavy Opaque Fade for Maximum Text Legibility */}
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
+        <img 
+          src="/assets/footer_bg_3d.jpg" 
+          alt="" 
+          className="w-full h-full object-cover object-center opacity-20 mix-blend-luminosity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0C0E]/95 via-[#0B0C0E]/90 to-[#0B0C0E]" />
+      </div>
+
       {/* Ambient background glow */}
       <div className="absolute bottom-0 left-1/3 w-[500px] h-[500px] bg-[#C4121A]/10 rounded-full blur-[140px] pointer-events-none" />
 
@@ -169,7 +179,11 @@ export default function Footer({ onOpenContact, onReplaySplash }) {
             <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-400">
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#C4121A]" />
-                <span>partnerships@nexusbridgealliance.com</span>
+                <a href="mailto:info@nexusbridgealliance.com" className="hover:text-white transition-colors">info@nexusbridgealliance.com</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-[#C4121A]" />
+                <a href="tel:+2348012345678" className="hover:text-white transition-colors">+234 801 234 5678</a>
               </div>
               <div className="flex items-center gap-2">
                 <Globe className="w-3.5 h-3.5 text-[#C4121A]" />

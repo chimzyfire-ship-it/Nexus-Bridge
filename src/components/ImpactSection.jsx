@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function ImpactSection() {
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [counts, setCounts] = useState({ connections: 0, industries: 0, vision: 0 });
+  const [counts, setCounts] = useState({ connections: 0, companies: 0, countries: 0 });
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -22,15 +22,15 @@ export default function ImpactSection() {
             const easeProgress = 1 - Math.pow(1 - progress, 3);
 
             setCounts({
-              connections: Math.floor(easeProgress * 50),
-              industries: Math.floor(easeProgress * 10),
-              vision: 1
+              connections: Math.floor(easeProgress * 40),
+              companies: Math.floor(easeProgress * 178),
+              countries: Math.floor(easeProgress * 5)
             });
 
             if (progress < 1) {
               requestAnimationFrame(updateCounts);
             } else {
-              setCounts({ connections: 50, industries: 10, vision: 1 });
+              setCounts({ connections: 40, companies: 178, countries: 5 });
             }
           };
 
@@ -53,7 +53,7 @@ export default function ImpactSection() {
     <section 
       id="impact" 
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#0A0C0E] text-white py-16 sm:py-20 lg:py-24 select-none"
+      className="relative overflow-hidden bg-[#0A0C0E] text-white py-16 sm:py-20 lg:py-24 select-none mx-2 sm:mx-4 lg:mx-6 my-4 sm:my-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] border border-white/10 shadow-2xl"
     >
       {/* Background Skyline Image */}
       <div className="absolute inset-0 z-0">
@@ -90,7 +90,7 @@ export default function ImpactSection() {
           {/* Right Metrics / Counters with Dividers */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-10 border-t sm:border-t-0 pt-8 sm:pt-0 border-white/10">
             
-            {/* Stat 1 */}
+            {/* Stat 1: 40+ Strategic Connections */}
             <div className="relative flex flex-col sm:border-r border-white/15 sm:pr-8 lg:pr-10">
               <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight flex items-baseline">
                 <span>{counts.connections}</span>
@@ -101,24 +101,23 @@ export default function ImpactSection() {
               </p>
             </div>
 
-            {/* Stat 2 */}
+            {/* Stat 2: 178 Companies Served */}
             <div className="relative flex flex-col sm:border-r border-white/15 sm:pr-8 lg:pr-10">
               <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight flex items-baseline">
-                <span>{counts.industries}</span>
-                <span className="text-[#C4121A] ml-1">+</span>
+                <span>{counts.companies}</span>
               </div>
               <p className="mt-2 text-xs sm:text-sm font-light text-gray-300 tracking-wide leading-snug">
-                Industries Served
+                Companies Served
               </p>
             </div>
 
-            {/* Stat 3 */}
+            {/* Stat 3: 5 Countries */}
             <div className="relative flex flex-col sm:pl-2">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
-                {counts.vision}
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight flex items-baseline">
+                <span>{counts.countries}</span>
               </div>
               <p className="mt-2 text-xs sm:text-sm font-light text-gray-300 tracking-wide leading-snug max-w-[180px]">
-                Shared Vision for Sustainable Growth
+                Countries
               </p>
             </div>
 

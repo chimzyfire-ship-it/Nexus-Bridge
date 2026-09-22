@@ -48,8 +48,18 @@ export default function OurApproachSection() {
   ];
 
   return (
-    <section id="approach" className="py-24 bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="approach" className="py-24 bg-white relative overflow-hidden mx-2 sm:mx-4 lg:mx-6 my-4 sm:my-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] border border-gray-200/70 shadow-lg">
+      {/* 3D Background Image with Mature Fade */}
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
+        <img 
+          src="/assets/focus_bg_3d.jpg" 
+          alt="" 
+          className="w-full h-full object-cover object-center opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white/95" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">

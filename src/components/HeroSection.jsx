@@ -4,7 +4,7 @@ import NexusLogo from './NexusLogo';
 
 export default function HeroSection({ onOpenContact }) {
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center overflow-hidden pt-24 lg:pt-0 bg-[#FBFBFB]">
+    <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 lg:pt-0 bg-[#FBFBFB] mx-2 sm:mx-4 lg:mx-6 mt-20 lg:mt-24 mb-4 sm:mb-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] border border-gray-200/70 shadow-lg">
       
       {/* Background Hero Image with Minimal Edge-Only Fade Overlay */}
       <div className="absolute top-0 right-0 w-full lg:w-[68%] xl:w-[70%] h-full z-0 overflow-hidden select-none">
@@ -37,8 +37,8 @@ export default function HeroSection({ onOpenContact }) {
           
           {/* Eyebrow / Kicker */}
           <div className="mb-4 sm:mb-6">
-            <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-gray-500 uppercase">
-              People. Opportunities. Progress.
+            <span className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#C4121A] uppercase">
+              Digital Marketing • AI Solutions • Business Growth
             </span>
           </div>
 
@@ -51,7 +51,7 @@ export default function HeroSection({ onOpenContact }) {
 
           {/* Subtitle / Paragraph */}
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8 max-w-lg font-normal">
-            Nexus Bridge Alliance Ltd connects businesses, investors and organizations — creating strategic partnerships that unlock opportunities and drive real, sustainable growth.
+            Nexus Bridge Alliance Ltd empowers businesses through innovative digital marketing, AI solutions, and strategic partnerships — attracting the right audience, converting them into customers, and driving real, sustainable growth.
           </p>
 
           {/* Call to Action Buttons */}
@@ -75,7 +75,7 @@ export default function HeroSection({ onOpenContact }) {
           {/* Tagline Below Buttons */}
           <div className="pt-2 border-t border-gray-200/80 max-w-md">
             <p className="text-[11px] sm:text-xs font-semibold tracking-[0.22em] text-gray-400 uppercase leading-relaxed">
-              Stronger Partnerships.<br className="sm:hidden" /> Brighter Possibilities.
+              Strategy • Technology • Creativity • Results
             </p>
           </div>
 

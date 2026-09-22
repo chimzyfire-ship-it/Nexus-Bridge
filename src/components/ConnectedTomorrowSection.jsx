@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function ConnectedTomorrowSection({ onOpenContact }) {
   return (
-    <section className="relative overflow-hidden bg-white min-h-[480px] lg:min-h-[540px] flex items-center select-none">
+    <section className="relative overflow-hidden bg-white min-h-[480px] lg:min-h-[540px] flex items-center select-none mx-2 sm:mx-4 lg:mx-6 my-4 sm:my-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] border border-gray-200/70 shadow-lg">
       
       {/* Background Boardroom Image with Minimal Edge-Only White Gradient Overlay */}
       <div className="absolute top-0 right-0 w-full lg:w-[65%] xl:w-[68%] h-full z-0 overflow-hidden select-none">
@@ -42,7 +42,7 @@ export default function ConnectedTomorrowSection({ onOpenContact }) {
 
           {/* Description */}
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8 max-w-md font-normal">
-            We believe in a future where businesses, people and communities thrive through collaboration.
+            We bridge the gap for ambitious businesses worldwide — using digital marketing, AI solutions, and strategic alliances to attract the right audience, convert them into customers, and maximize profits.
           </p>
 
           {/* Red Action Button */}

@@ -20,7 +20,7 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
       category: 'marketing',
       icon: TrendingUp,
       title: 'Digital Marketing',
-      tagline: 'Precision Paid Acquisition & Performance Marketing',
+      tagline: 'Grow your brand across all channels.',
       description: 'We help businesses reach the right audience, generate qualified leads, increase brand awareness, and drive sales through data-driven advertising across global ad platforms.',
       channels: ['Google Ads', 'Meta (Facebook & IG)', 'LinkedIn Ads', 'TikTok Ads', 'X (Twitter) Ads'],
       features: [
@@ -35,7 +35,7 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
       category: 'branding',
       icon: Share2,
       title: 'Social Media Management',
-      tagline: 'Turn Profiles into Professional Business Assets',
+      tagline: 'Build. Engage. Convert.',
       description: 'Your social media presence is often the first interaction a prospect has with your company. We build, manage, optimize, and grow an authoritative social footprint.',
       channels: ['Instagram', 'LinkedIn', 'Facebook', 'TikTok', 'X'],
       features: [
@@ -80,7 +80,7 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
       category: 'ai',
       icon: Sparkles,
       title: 'AI Content Creation',
-      tagline: 'High-Velocity, Brand-Aligned Visuals & Copy',
+      tagline: 'Quality content. Consistently.',
       description: 'We combine state-of-the-art AI workflows with human creative direction to produce studio-grade visuals, video assets, and compelling marketing copy at unmatched speed.',
       channels: ['AI Visuals', 'AI Video Generation', 'Ad Creatives', 'AI Copywriting'],
       features: [
@@ -95,7 +95,7 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
       category: 'ai',
       icon: Cpu,
       title: 'AI Automation',
-      tagline: 'Less Repetitive Work. More Efficiency. More Scale.',
+      tagline: 'Work smarter. Save time.',
       description: 'Businesses lose valuable hours when teams perform repetitive tasks that technology can handle. We build intelligent automation pipelines that free your team to focus on growth.',
       channels: ['Customer Support Bots', 'CRM Workflows', 'Booking Systems', 'Lead Routing'],
       features: [
@@ -110,7 +110,7 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
       category: 'ai',
       icon: Target,
       title: 'AI Ads',
-      tagline: 'Strategic Paid Ads Powered by Machine Learning',
+      tagline: 'High-performing ads, faster.',
       description: 'We synthesize artificial intelligence, behavioral data, and paid advertising strategy to accelerate campaign testing, discover winning angles, and scale profitable ad spend.',
       channels: ['Multi-Variant Testing', 'AI Video Ads', 'Predictive Targeting', 'Creative Loops'],
       features: [
@@ -135,8 +135,18 @@ export default function CoreServicesSection({ onOpenContact, onSelectService }) 
     : services.filter(s => s.category === activeTab);
 
   return (
-    <section id="services" className="py-24 bg-[#FBFBFB] relative border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-24 bg-[#FBFBFB] relative border border-gray-200/70 overflow-hidden mx-2 sm:mx-4 lg:mx-6 my-4 sm:my-6 rounded-3xl sm:rounded-[2.5rem] lg:rounded-[3rem] shadow-lg">
+      {/* 3D Background Image Asset with Mature Fade */}
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
+        <img 
+          src="/assets/services_bg_3d.jpg" 
+          alt=""
+          className="w-full h-full object-cover object-center opacity-45 mix-blend-multiply"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FBFBFB]/90 via-[#FBFBFB]/75 to-[#FBFBFB]/95" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
