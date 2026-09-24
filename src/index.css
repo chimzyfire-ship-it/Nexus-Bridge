@@ -48,14 +48,14 @@
   border-color: rgba(196, 18, 26, 0.3);
 }
 
-/* Exact, Minimal Edge-Only Gradients matching Website landing inspiration */
+/* Refined Hero Gradient: Preserves faces & crystal clarity of executives */
 .hero-gradient-mask {
   background: linear-gradient(
     to bottom,
-    rgba(251, 251, 251, 0.98) 0%,
-    rgba(251, 251, 251, 0.9) 45%,
-    rgba(251, 251, 251, 0.25) 75%,
-    rgba(251, 251, 251, 0) 100%
+    rgba(251, 251, 251, 0.45) 0%,
+    rgba(251, 251, 251, 0.1) 20%,
+    transparent 45%,
+    rgba(251, 251, 251, 0.5) 100%
   );
 }
 
@@ -64,10 +64,9 @@
     background: linear-gradient(
       to right,
       #FBFBFB 0%,
-      rgba(251, 251, 251, 0.95) 8%,
-      rgba(251, 251, 251, 0.65) 20%,
-      rgba(251, 251, 251, 0.2) 32%,
-      rgba(251, 251, 251, 0) 45%
+      rgba(251, 251, 251, 0.75) 2%,
+      rgba(251, 251, 251, 0.2) 5%,
+      transparent 10%
     );
   }
 }

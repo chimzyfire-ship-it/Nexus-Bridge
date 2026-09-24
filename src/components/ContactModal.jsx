@@ -261,6 +261,20 @@ export default function ContactModal({ isOpen, onClose, preselectedService = nul
             <p className="text-[11px] text-center text-gray-400">
               Nexus Bridge Alliance Limited respects your confidentiality. Non-Disclosure Agreement (NDA) provided upon request.
             </p>
+
+            <div className="pt-2 text-center border-t border-gray-100">
+              <span className="text-[11px] text-gray-500">
+                Prefer direct executive contact?{' '}
+                <a
+                  href="https://www.linkedin.com/in/abraham-munie-abdullahi?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#0A66C2] hover:underline inline-flex items-center gap-1"
+                >
+                  Connect with Abraham Munie Abdullahi (Founder) ↗
+                </a>
+              </span>
+            </div>
           </form>
         )}
 

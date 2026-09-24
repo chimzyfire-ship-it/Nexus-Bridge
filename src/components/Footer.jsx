@@ -77,46 +77,49 @@ export default function Footer({ onOpenContact, onReplaySplash }) {
               </div>
             </div>
 
-            {/* Social Icons (Pure SVG, professional corporate stroke) */}
-            <div className="flex items-center gap-3 pt-2">
-              {/* LinkedIn */}
+            {/* Social Icons (Company LinkedIn, Instagram, TikTok, and Intro Replay) */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              {/* Company LinkedIn */}
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/nxrthbridgeagency/" 
                 target="_blank" 
                 rel="noreferrer"
-                aria-label="LinkedIn"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C4121A] text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
+                aria-label="Nexus Bridge Alliance LinkedIn"
+                title="Nexus Bridge Alliance on LinkedIn"
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#0A66C2] text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                 </svg>
               </a>
 
-              {/* X / Twitter */}
-              <a 
-                href="https://x.com" 
-                target="_blank" 
-                rel="noreferrer"
-                aria-label="X Twitter"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C4121A] text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
-              >
-                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </a>
-
               {/* Instagram */}
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/nexusbridge.allianceltd?stkn=MTNyZXlnczMyZzN5NQ%3D%3D&utm_source=qr" 
                 target="_blank" 
                 rel="noreferrer"
-                aria-label="Instagram"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C4121A] text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
+                aria-label="Nexus Bridge Alliance Instagram"
+                title="Nexus Bridge Alliance on Instagram"
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#E1306C] text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
               >
                 <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+
+              {/* TikTok */}
+              <a 
+                href="https://www.tiktok.com/@nexusbridge.allianceltd?_r=1&_t=ZS-99yiXygthmU" 
+                target="_blank" 
+                rel="noreferrer"
+                aria-label="Nexus Bridge Alliance TikTok"
+                title="Nexus Bridge Alliance on TikTok"
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-black text-gray-400 hover:text-white flex items-center justify-center transition-colors border border-white/10"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.49 6.3 6.3 0 0 0 1.96-4.49V8.82a8.28 8.28 0 0 0 4.84 1.55V6.92a4.85 4.85 0 0 1-1.03-.23z"/>
                 </svg>
               </a>
 
@@ -129,6 +132,25 @@ export default function Footer({ onOpenContact, onReplaySplash }) {
                 <span className="w-2 h-2 rounded-full bg-[#C4121A] animate-pulse" />
                 <span>Replay Intro</span>
               </button>
+            </div>
+
+            {/* Founder Spotlight Pill in Footer */}
+            <div className="pt-3 border-t border-white/10">
+              <span className="text-[10px] uppercase tracking-widest text-[#C4121A] font-bold block mb-1.5">
+                Executive Leadership
+              </span>
+              <a 
+                href="https://www.linkedin.com/in/abraham-munie-abdullahi?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.05] hover:bg-[#0A66C2] text-gray-300 hover:text-white text-xs font-medium border border-white/10 transition-colors group"
+              >
+                <svg className="w-3.5 h-3.5 fill-current text-[#0A66C2] group-hover:text-white" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+                <span>Abraham Munie Abdullahi (Founder)</span>
+                <span className="text-[10px] text-gray-400 group-hover:text-blue-100">↗</span>
+              </a>
             </div>
           </div>
 
@@ -233,6 +255,7 @@ export default function Footer({ onOpenContact, onReplaySplash }) {
               Methodology & Reach
             </h4>
             <ul className="space-y-2.5 text-gray-400">
+              <li><a href="#leadership" className="hover:text-white transition-colors">Executive Leadership</a></li>
               <li><a href="#approach" className="hover:text-white transition-colors">The 6-Phase Engine</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">Why Nexus Bridge</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">Who We Serve</a></li>

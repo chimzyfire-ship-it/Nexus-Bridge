@@ -8,6 +8,7 @@ import ConnectedTomorrowSection from './components/ConnectedTomorrowSection';
 import CoreServicesSection from './components/CoreServicesSection';
 import OurApproachSection from './components/OurApproachSection';
 import WhoWeServeSection from './components/WhoWeServeSection';
+import LeadershipSection from './components/LeadershipSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import CardDetailModal from './components/CardDetailModal';
@@ -94,6 +95,9 @@ export default function App() {
 
         {/* 9. Who We Serve & Why Nexus Bridge */}
         <WhoWeServeSection />
+
+        {/* 10. Executive Leadership & Global Channels Hub */}
+        <LeadershipSection onOpenContact={() => handleOpenContact()} />
       </main>
 
       {/* 10. World-Class Corporate Footer */}
