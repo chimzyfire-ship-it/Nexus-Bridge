@@ -91,7 +91,7 @@ export default function App() {
         />
 
         {/* 8. The 6-Phase Engine (Our Approach) */}
-        <OurApproachSection />
+        <OurApproachSection onOpenContact={(phase) => handleOpenContact(phase)} />
 
         {/* 9. Who We Serve & Why Nexus Bridge */}
         <WhoWeServeSection />

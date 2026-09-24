@@ -87,14 +87,16 @@ export default function LeadershipSection({ onOpenContact }) {
             <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-br from-[#C4121A]/10 to-transparent rounded-bl-full pointer-events-none" />
             
             <div>
-              {/* Executive Tag & Monogram Badge */}
+              {/* Executive Header & Region */}
               <div className="flex items-center justify-between gap-4 mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 border border-red-100/60 text-[#C4121A] text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-[#C4121A] animate-pulse" />
-                  <span>Founder Spotlight</span>
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-[2px] bg-[#C4121A] rounded-full inline-block" />
+                  <span className="text-xs font-bold tracking-[0.2em] text-[#C4121A] uppercase">
+                    Founder & Managing Director
+                  </span>
                 </div>
 
-                <div className="flex items-center gap-2 text-xs text-gray-400 font-mono">
+                <div className="flex items-center gap-2 text-xs text-gray-500 font-mono">
                   <Globe className="w-3.5 h-3.5 text-[#C4121A]" />
                   <span>Dubai • Nigeria • Global</span>
                 </div>
