@@ -48,52 +48,6 @@
   border-color: rgba(196, 18, 26, 0.3);
 }
 
-/* Refined Hero Gradient: Full photo glory with 100% crystal clarity over the dark-skinned man & team */
-.hero-gradient-mask {
-  background: linear-gradient(
-    to bottom,
-    rgba(251, 251, 251, 0.94) 0%,
-    rgba(251, 251, 251, 0.82) 32%,
-    rgba(251, 251, 251, 0.25) 55%,
-    transparent 75%
-  );
-}
-
-@media (min-width: 1024px) {
-  .hero-gradient-mask {
-    background: linear-gradient(
-      to right,
-      #FBFBFB 0%,
-      rgba(251, 251, 251, 0.96) 12%,
-      rgba(251, 251, 251, 0.75) 20%,
-      rgba(251, 251, 251, 0.2) 27%,
-      transparent 32%
-    );
-  }
-}
-
-.connected-gradient-mask {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.96) 0%,
-    rgba(255, 255, 255, 0.88) 50%,
-    rgba(255, 255, 255, 0.2) 80%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-@media (min-width: 1024px) {
-  .connected-gradient-mask {
-    background: linear-gradient(
-      to right,
-      #FFFFFF 0%,
-      rgba(255, 255, 255, 0.95) 2%,
-      rgba(255, 255, 255, 0.45) 6%,
-      rgba(255, 255, 255, 0) 12%
-    );
-  }
-}
-
 .impact-gradient-mask {
   background: linear-gradient(
     to bottom,
@@ -200,4 +154,60 @@
 
 .shimmer-effect:hover::after {
   animation: shimmer 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Supplied reference images contain their own fade; preserve it on desktop. */
+.reference-hero, .reference-connected { position: relative; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #f7f4ed; }
+.reference-background { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.reference-hero { min-height: 62vw; }
+.reference-hero-content { position: relative; padding: 13.3vw 0 4vw; margin-left: 7.2%; width: 35%; }
+.hero-eyebrow { color: #5a5a58; font-size: 1.15vw; letter-spacing: .24em; font-weight: 600; text-transform: uppercase; margin-bottom: 1.8vw; white-space: nowrap; }
+.reference-hero h1 { font-size: 5.5vw; line-height: .96; letter-spacing: -.045em; font-weight: 800; color: #080808; margin-bottom: 1.5vw; }
+.reference-hero h1 span { color: #c4121a; }
+.hero-description { font-size: 1.5vw; line-height: 1.34; max-width: 29vw; color: #30302d; margin-bottom: 2.2vw; }
+.reference-actions { display: flex; gap: 1.5vw; }
+.reference-button { display: inline-flex; align-items: center; justify-content: center; gap: 1vw; background: #d00012; color: white; border: 2px solid #d00012; border-radius: 7px; padding: 1.25vw 2.2vw; font-size: 1.3vw; font-weight: 600; transition: background .2s; }
+.reference-button:hover { background: #ad0010; }
+.reference-button svg { width: 1.5vw; height: 1.5vw; }
+.reference-button-secondary { color: #252523; border-color: #77736c; background: transparent; }
+.reference-button-secondary:hover { background: #ffffff80; }
+.hero-tagline { margin-top: 3vw; color: #575752; font-size: 1vw; line-height: 1.7; letter-spacing: .22em; text-transform: uppercase; }
+.hero-tagline::before { content: ''; display: block; width: 3.4vw; height: 2px; background: #c4121a; margin-bottom: 1.2vw; }
+.hero-wall { position: absolute; top: 15%; right: 4.2%; width: 13%; color: #dededc; }
+.hero-wall img { width: 100%; }
+.hero-wall-words { position: relative; margin-top: 2.5vw; padding-top: 2.2vw; font-size: 2vw; line-height: 1.25; font-weight: 400; }
+.hero-wall-words::before { content: ''; position: absolute; left: -2vw; top: 0; bottom: -2vw; width: 1px; background: #ffffff50; }
+.hero-wall-words span { position: absolute; top: 0; width: 2.5vw; height: 2px; background: #c4121a; }
+.reference-nav-container { width: 89%; max-width: none; }
+.reference-nav-logo { width: clamp(105px, 12vw, 175px); height: auto; }
+.reference-connected { min-height: 33.45vw; margin: 24px 0; }
+.reference-connected-content { position: relative; margin-left: 7.2%; padding: 4.5vw 0; width: 35%; }
+.reference-connected h2 { color: #080808; font-size: 3.4vw; line-height: 1.05; letter-spacing: -.035em; font-weight: 700; }
+.connected-dash { width: 3.2vw; height: 3px; background: #c4121a; margin: 2vw 0; }
+.reference-connected-content p { font-size: 1.5vw; line-height: 1.4; color: #444440; margin-bottom: 2vw; }
+.reference-connected .reference-button { padding-left: 3.2vw; padding-right: 3.2vw; }
+.connected-wall { position: absolute; top: 19%; right: 7%; text-transform: uppercase; color: #41413c; font-size: 1.1vw; line-height: 1.6; transform: rotate(-5deg); }
+.connected-wall span { display: block; background: #c4121a; width: 3.2vw; height: 2px; margin-top: 1.8vw; }
+@media (max-width: 767px) {
+  .reference-nav-container { width: 100%; }
+  .reference-hero { min-height: 880px; }
+  .reference-hero .reference-background { height: 390px; top: auto; object-position: right bottom; }
+  .reference-hero::after, .reference-connected::after { content: ''; position: absolute; inset: 0; background: linear-gradient(#f7f4ed 50%, transparent 78%); pointer-events: none; }
+  .reference-hero-content, .reference-connected-content { z-index: 1; width: auto; margin: 0 7%; padding: 145px 0 320px; }
+  .hero-eyebrow { font-size: 10px; letter-spacing: .17em; margin-bottom: 22px; white-space: normal; }
+  .reference-hero h1 { font-size: clamp(39px, 9.7vw, 70px); margin-bottom: 20px; }
+  .hero-description { font-size: 16px; max-width: 380px; margin-bottom: 24px; }
+  .reference-actions { gap: 12px; flex-wrap: wrap; }
+  .reference-button { font-size: 14px; padding: 14px 22px; gap: 12px; }
+  .reference-button svg { width: 18px; height: 18px; }
+  .hero-tagline { font-size: 10px; margin-top: 28px; }
+  .hero-tagline::before { width: 40px; margin-bottom: 14px; }
+  .hero-wall, .connected-wall { display: none; }
+  .reference-connected { min-height: 540px; }
+  .reference-connected .reference-background { height: 270px; top: auto; object-position: right bottom; }
+  .reference-connected-content { padding: 40px 0 270px; }
+  .reference-connected h2 { font-size: clamp(28px, 7.5vw, 44px); }
+  .connected-dash { width: 40px; margin: 22px 0; }
+  .reference-connected-content p { font-size: 16px; margin-bottom: 24px; max-width: 390px; }
+  .reference-connected .reference-button { padding: 14px 28px; }
 }
