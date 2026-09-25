@@ -179,7 +179,11 @@
 .hero-wall-words::before { content: ''; position: absolute; left: -2vw; top: 0; bottom: -2vw; width: 1px; background: #ffffff50; }
 .hero-wall-words span { position: absolute; top: 0; width: 2.5vw; height: 2px; background: #c4121a; }
 .reference-nav-container { width: 89%; max-width: none; }
-.reference-nav-logo { width: clamp(105px, 12vw, 175px); height: auto; }
+.reference-nav-logo { width: clamp(105px, 12vw, 175px); flex-direction: column; gap: 0; }
+.reference-nav-logo svg { height: clamp(48px, 5.5vw, 76px); width: auto; }
+.reference-nav-logo > div:last-child { align-items: center; }
+.reference-nav-logo > div:last-child > span:first-child { font-size: clamp(10px, 1.15vw, 16px); letter-spacing: .08em; white-space: nowrap; }
+.reference-nav-logo > div:last-child > span:last-child { font-size: clamp(7px, .7vw, 10px); letter-spacing: .23em; }
 .reference-connected { min-height: 33.45vw; margin: 24px 0; }
 .reference-connected-content { position: relative; margin-left: 7.2%; padding: 4.5vw 0; width: 35%; }
 .reference-connected h2 { color: #080808; font-size: 3.4vw; line-height: 1.05; letter-spacing: -.035em; font-weight: 700; }

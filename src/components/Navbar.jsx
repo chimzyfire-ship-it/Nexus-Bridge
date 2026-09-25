@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import NexusLogo from './NexusLogo';
 import { Menu, X, ArrowRight, Play } from 'lucide-react';
 
 export default function Navbar({ onOpenContact, onReplaySplash }) {
@@ -53,7 +54,7 @@ export default function Navbar({ onOpenContact, onReplaySplash }) {
           
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <img src="/assets/logo_clean_transparent.png" alt="Nexus Bridge Alliance Ltd" className="reference-nav-logo" />
+            <NexusLogo variant="light" size="md" className="reference-nav-logo" />
           </a>
 
           {/* Desktop Navigation Links */}
