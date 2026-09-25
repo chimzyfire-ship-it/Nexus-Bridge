@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Play } from 'lucide-react';
-import NexusLogo from './NexusLogo';
 
 export default function Navbar({ onOpenContact, onReplaySplash }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,19 +45,19 @@ export default function Navbar({ onOpenContact, onReplaySplash }) {
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3.5' 
-          : 'bg-white/60 backdrop-blur-sm py-5'
+          : 'bg-transparent py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="reference-nav-container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between">
           
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <NexusLogo variant="light" size="md" />
+            <img src="/assets/logo_clean_transparent.png" alt="Nexus Bridge Alliance Ltd" className="reference-nav-logo" />
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
+          <nav className="hidden lg:flex items-center gap-4 lg:gap-7">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
               return (
@@ -80,7 +79,7 @@ export default function Navbar({ onOpenContact, onReplaySplash }) {
           </nav>
 
           {/* Desktop Right CTA Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             {/* Replay Intro splash button */}
             <button
               onClick={onReplaySplash}
@@ -101,7 +100,7 @@ export default function Navbar({ onOpenContact, onReplaySplash }) {
           </div>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={onReplaySplash}
               title="Replay Intro"
@@ -123,7 +122,7 @@ export default function Navbar({ onOpenContact, onReplaySplash }) {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 shadow-xl">
           {navLinks.map((link) => (
             <a
               key={link.label}
